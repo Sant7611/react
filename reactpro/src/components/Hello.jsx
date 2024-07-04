@@ -1,9 +1,10 @@
-function Hello(props) {
-  console.log(props);
+function Hello({named, message}) {
+  console.log({named, message});
+//   const {named, message} = props;
   return (
     <div>
-      <h1>This is {props}</h1>
-      <h2>hey {props} this is santosh. welcome you</h2>
+      <h1>This is {named}</h1>
+      <h2>hey {named} {message}</h2>
     </div>
   );
 }
