@@ -4,6 +4,7 @@ import Hello from "./components/Hello";
 import Counter from "./Counter";
 import Event from "./Event";
 import Form from "./Form";
+import MultipleForms from "./MultipleForms";
 function App() {
   return (
       <div className="App">
@@ -12,7 +13,8 @@ function App() {
         {/* <ConditionalComponent /> */}
         {/* <Event /> */}
         {/* <Counter /> */}
-        <Form />
+        {/* <Form /> */}
+        <MultipleForms />
       </div>
   );
 }
