@@ -2,10 +2,10 @@ import Fruit from "./Fruit";
 export default function Fruits() {
   //   const fruits = ["Apple", "Mango", "Banana", "Orange"];
   const fruits = [
-    { name: "apple", price: "10$", emoji: "🍎" },
-    { name: "banana", price: "5$", emoji: "🍌" },
-    { name: "orange", price: "8$", emoji: "🍊" },
-    { name: "pineapple", price: "13$", emoji: "🍍" },
+    { name: "apple", price: 10, emoji: "🍎",sold: true  }, // Price as a number
+    { name: "banana", price: 5, emoji: "🍌",sold: false  },
+    { name: "orange", price: 8, emoji: "🍊",sold: false  },
+    { name: "pineapple", price: 13, emoji: "🍍",sold: true  },
   ];
   return (
     <div>
@@ -17,6 +17,7 @@ export default function Fruits() {
             name={fruit.name}
             price={fruit.price}
             emoji={fruit.emoji}
+            sold = {fruit.sold}
           />
         ))}
         ;
