@@ -4,6 +4,10 @@ import { useState } from "react";
 
 export default function MultipleForms() {
   const [name, setName] = useState({ fname: "", lname: "" });
+  function handleSubmission(e){
+    console.log(name);
+    e.preventDefault();
+  }
   return (
     <div>
       {name.fname}={name.lname}
@@ -18,6 +22,7 @@ export default function MultipleForms() {
           onChange={(e) => setName({ ...name, lname: e.target.value })}
           value={name.lname}
         />
+        <button onClick={(e)=>handleSubmission(e)}>Submit</button>
       </form>
     </div>
   );
