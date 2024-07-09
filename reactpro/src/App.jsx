@@ -13,7 +13,7 @@ function App() {
         {/* <ConditionalComponent /> */}
         {/* <Event /> */}
         {/* <Counter /> */}
-        {/* <Form /> */}
+        <Form />
         <MultipleForms />
       </div>
   );
